@@ -1,4 +1,4 @@
-FROM 10.15.3-jessie-slim
+FROM node:10.15.3-jessie-slim
 
 # Create app directory
 WORKDIR /usr/src/app
