@@ -1,0 +1,28 @@
+kind: Deployment
+apiVersion: apps/v1beta1
+metadata:
+  name: bookmarks-pwa
+  labels:
+    app: bookmarks-pwa
+    tier: frontend
+spec:
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  minReadySeconds: 10
+  template:
+    metadata:
+      labels:
+        app: bookmarks-pwa
+        tier: frontend
+    spec:
+      containers:
+        - image: gcr.io/bookmarks-234610/github.com/acoiro/bookmarks-pwa:latest
+          name: bookmarks-pwa
+          imagePullPolicy: Always
+          ports:
+            - name: http-server
+              containerPort: 8080
