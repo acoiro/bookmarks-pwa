@@ -20,7 +20,7 @@ spec:
         tier: frontend
     spec:
       containers:
-        - image: gcr.io/bookmarks-234610/github.com/acoiro/bookmarks-pwa:latest
+        - image: gcr.io/bookmarks-234610/github_acoiro_bookmarks-pwa:latest
           name: bookmarks-pwa
           imagePullPolicy: Always
           ports:
