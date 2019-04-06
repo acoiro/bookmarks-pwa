@@ -11,7 +11,7 @@ steps:
   - 'deployment/${_DEPLOYMENT_NAME}'
   - '${_CONTAINER_NAME}=gcr.io/$PROJECT_ID/$REPO_NAME:$REVISION_ID'
   env:
-  - 'CLOUDSDK_COMPUTE_REGION=europe-west6'
+  - 'CLOUDSDK_COMPUTE_ZONE=europe-west6'
   - 'CLOUDSDK_CONTAINER_CLUSTER=bookmarks-production'
 images:
   - 'gcr.io/$PROJECT_ID/$REPO_NAME:latest'
