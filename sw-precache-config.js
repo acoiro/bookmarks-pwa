@@ -13,7 +13,7 @@ module.exports = {
     'manifest.json',
     'src/**/*',
   ],
-  navigateFallbackWhitelist: [/^(?!\/api).*/],
+  navigateFallbackWhitelist: [/^(?!\/api|\/auth).*/],
   runtimeCaching: [
     {
       urlPattern: /\/@webcomponents\/webcomponentsjs\//,

@@ -233,7 +233,7 @@ self.addEventListener('fetch', function (event) {
     if (!shouldRespond &&
         navigateFallback &&
         (event.request.mode === 'navigate') &&
-        isPathWhitelisted(["^(?!\\/api).*"], event.request.url)) {
+        isPathWhitelisted(["^(?!\\/api|\\/auth).*"], event.request.url)) {
       url = new URL(navigateFallback, self.location).toString();
       shouldRespond = urlsToCacheKeys.has(url);
     }

@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["index.html","d83e3f3359c7f23f44320fae971a39e6"],["manifest.json","bf07b32277f9d3ec3de2b62edace2f5a"],["src/components/my-app.js","27f534b210d6da9805ef88703c474408"],["src/components/my-view1.js","013394b939be4ac118e8d81c9d06065a"],["src/components/my-view2.js","deadaff18d4fd07ded3d828b1a45d03e"],["src/components/my-view3.js","c724cd794ea24fade0859a1dff0df3f8"],["src/components/my-view404.js","8a99705654038a5b6d6b92e6d247f959"]];
+var precacheConfig = [["index.html","d83e3f3359c7f23f44320fae971a39e6"],["manifest.json","bf07b32277f9d3ec3de2b62edace2f5a"],["src/components/my-app.js","27f534b210d6da9805ef88703c474408"],["src/components/my-view1.js","5377d2b12dab87782264016ffc632e48"],["src/components/my-view2.js","8455b059d2839d269f927d8b5c168e43"],["src/components/my-view3.js","b8d44887e7c2a9b505515f4cc59f2486"],["src/components/my-view404.js","44b8b80af5329b5c270e62f76f6bb5e3"]];
 var cacheName = 'sw-precache-v3--' + (self.registration ? self.registration.scope : '');
 
 
@@ -233,7 +233,7 @@ self.addEventListener('fetch', function (event) {
     if (!shouldRespond &&
         navigateFallback &&
         (event.request.mode === 'navigate') &&
-        isPathWhitelisted(["^(?!\\/api).*"], event.request.url)) {
+        isPathWhitelisted(["^(?!\\/api|\\/auth).*"], event.request.url)) {
       url = new URL(navigateFallback, self.location).toString();
       shouldRespond = urlsToCacheKeys.has(url);
     }
