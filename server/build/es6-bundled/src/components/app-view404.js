@@ -6,4 +6,4 @@ define(["./my-app.js"],function(_myApp){"use strict";class MyView404 extends _my
           <a href="/">home</a> and try again?
         </p>
       </section>
-    `}}window.customElements.define("my-view404",MyView404)});
+    `}}window.customElements.define("app-view404",MyView404)});

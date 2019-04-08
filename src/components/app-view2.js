@@ -86,4 +86,4 @@ class MyView2 extends connect(store)(PageViewElement) {
   }
 }
 
-window.customElements.define('my-view2', MyView2);
+window.customElements.define('app-view2', MyView2);

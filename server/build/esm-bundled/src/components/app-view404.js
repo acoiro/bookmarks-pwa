@@ -6,4 +6,4 @@ import{html,PageViewElement,SharedStyles}from"./my-app.js";class MyView404 exten
           <a href="/">home</a> and try again?
         </p>
       </section>
-    `}}window.customElements.define("my-view404",MyView404);
+    `}}window.customElements.define("app-view404",MyView404);

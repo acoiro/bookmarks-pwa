@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["index.html","f432ee529beca882f5608372f0e55a9c"],["manifest.json","bf07b32277f9d3ec3de2b62edace2f5a"],["src/components/my-app.js","2acd176698203316faffe98e6b6e04f4"],["src/components/my-view1.js","e1138e6ed4d2f0d92c061cbce2fdd6c8"],["src/components/my-view2.js","d50d18c0dadc1f7ccb248f486369e430"],["src/components/my-view3.js","ef047a86ee2747a958788816e8736a3b"],["src/components/my-view404.js","87ad58f68657344940c05fcbbbc358e9"]];
+var precacheConfig = [["index.html","07a54d6ec1bd0519509825c88e2f94ed"],["manifest.json","bf07b32277f9d3ec3de2b62edace2f5a"],["src/components/app-index.js","50ea34d3ab3e37e2fd94f32410143806"],["src/components/app-me.js","607b6ed73258bb3094366cc3b9d99abf"],["src/components/app-pricing.js","4b93924b84e61f7db1df49922e20ba52"],["src/components/app-signin.js","8f2bcde17f895d738e3121f1f6b54ba7"],["src/components/app-signup.js","4ad36e507c8ca7bd680e7ccf53ff1a6a"],["src/components/app-view404.js","210463e57babd09d99c2b746ab7ba39c"],["src/components/my-app.js","e68ed6ef4f2171ed7bf9eda76b94fe2b"]];
 var cacheName = 'sw-precache-v3--' + (self.registration ? self.registration.scope : '');
 
 
